@@ -2,8 +2,15 @@ kind: BuildConfig
 apiVersion: v1
 metadata:
   name: hello-openshift
-spec
+spec:
   source:
     type: Git
     git:
-      uri: https://
+      uri: git@github.com:ellanos/hello-openshift-nodejs.git
+      ref: master
+  strategy:
+    type: Docker
+  output:
+    to:
+      kind: ImageStreamTag
+      name: hello-openshift:nodejs
