@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: duplicate-containers
+spec:
+  containers:
+    - name: one
+      image: openshift/hello-openshift:latest
+    - name: two
+      image: openshift/hello-openshift:latest

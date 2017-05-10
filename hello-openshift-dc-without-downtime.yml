@@ -1,0 +1,19 @@
+kind: DeploymentConfig
+apiVersion: v1
+metadata:
+  name: hello-openshift
+spec:
+  replicas: 1
+  strategy:
+    type: Rolling
+    rollingParams:
+      maxUnavailable: 0
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        pod: hello-openshift
+    spec:
+      containers:
+      - name: hello-openshift
+        image: openshift/hello-openshift:latest
