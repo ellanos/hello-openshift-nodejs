@@ -1,6 +1,0 @@
-kind: ImageStream
-apiVersion: v1
-metadata:
-  name: hello-openshift
-spec:
-  dockerImageRepository: openshift/hello-openshift
