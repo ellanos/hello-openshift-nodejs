@@ -6,7 +6,7 @@ spec:
   source:
     type: Git
     git:
-      uri: git@github.com:ellanos/hello-openshift-nodejs.git
+      uri: https://github.com/ellanos/hello-openshift-nodejs
       ref: master
   strategy:
     type: Docker
