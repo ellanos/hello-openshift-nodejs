@@ -1,5 +1,6 @@
 FROM node:0.10
-git clone https://github.com/ellanos/hello-openshift-nodejs.git
+
+RUN git clone https://github.com/ellanos/hello-openshift-nodejs.git
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
